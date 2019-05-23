@@ -1,0 +1,131 @@
+a.chapterLink {
+  color: #F5A622!important;
+
+}
+
+section {
+  padding: 70px 0;
+}
+
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+
+section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+h4 {
+  color: black;
+}
+
+a.chapterLink-delete {
+  color: red;
+}
+
+i.hover-read {
+  color: white;
+}
+
+/* HR h2 */
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffb737;
+  bottom: 0;
+  left: calc(50% - 25px);
+  margin-bottom: 30px;
+}
+
+.background-listChapters-item {
+  border-left: 2px solid rgb(245, 166, 34, 0.4);
+}
+
+.listChapters-link-bottom {
+  padding-top: 15px;
+}
+
+#listChapters .listChapters-item {
+  left: 0;
+  margin: 0 0 15px;
+}
+
+#listChapters .listChapters-item .listChapters-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#listChapters .listChapters-item .listChapters-link .listChapters-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+}
+
+#listChapters .listChapters-item .listChapters-link .listChapters-hover:hover {
+  opacity: 1;
+}
+
+/* Hover content */
+#listChapters .listChapters-item .listChapters-link .listChapters-hover .listChapters-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#listChapters .listChapters-item .listChapters-link .listChapters-hover .listChapters-hover-content i {
+  margin-top: -12px;
+}
+
+#listChapters .listChapters-item .listChapters-link .listChapters-hover .listChapters-hover-content h3,
+#listChapters .listChapters-item .listChapters-link .listChapters-hover .listChapters-hover-content h4 {
+  margin: 0;
+}
+
+/* White box under the chapter image */
+#listChapters .listChapters-item .listChapters-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#listChapters .listChapters-item .listChapters-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#listChapters .listChapters-item .listChapters-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#listChapters * {
+  z-index: 2;
+}

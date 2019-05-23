@@ -1,0 +1,40 @@
+footer {
+	background-color: #222222;
+	padding: 15px 0;
+    text-align: center;
+}
+
+footer a:hover {
+  color: #F5A622!important;
+  text-decoration: none;
+}
+
+a.footer {
+  color: white;
+}
+
+span.copyright {
+  color: white;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #222222;
+  border-radius: 100%;
+  outline: none;
+  background-color: white;
+}
+
+.footer-bottom {
+	margin-bottom: 340.5px;	
+}
+
+.margin-form {
+	padding-bottom: 115px;
+}

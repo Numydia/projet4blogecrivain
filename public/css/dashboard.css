@@ -1,0 +1,17 @@
+.manage-chapter {
+	border-right: 2px solid #f5a622;
+	padding-bottom: 15px;
+}
+
+.add-chapter {
+	border-right: 2px solid #f5a622;
+	padding-bottom: 15px;
+}
+
+i {
+	color: #f5a622;
+}
+
+a.manage-chapter-link, a.add-chapter-link, a.signal-comments {
+	color: #222222;
+}

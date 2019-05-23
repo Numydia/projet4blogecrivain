@@ -1,0 +1,67 @@
+body {
+   
+}
+
+nav.navbar {
+  border-bottom: 1px solid rgb(0, 0, 0, .125);
+}
+
+header nav ul {
+
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 15px;
+}
+
+li.nav-item.logo {
+	font-weight: 900;
+	border-right: 3px solid #111;
+	font-family: Catamaran;
+  font-size: 24px;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;    
+}
+
+
+/* Link next to the logo */
+nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,1);
+}
+
+.nav-link:hover {
+	color: #F5A622!important;
+}
+
+.bg-light {
+	
+}
+
+a:hover {
+
+  text-decoration: none;
+}
+
+
+/* =================================
+====================== Responsive */
+
+
+@media only screen and (max-width: 1000px) {
+	li.nav-item.logo {
+		margin: 0;
+
+	}
+}

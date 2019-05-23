@@ -1,0 +1,32 @@
+a.chapterLink {
+  color: #F5A622!important;
+
+}
+
+section.comment {
+  padding: 20px 0;
+}
+
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+
+/* HR h2 */
+.section-header-chapter::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #ffb737;
+  bottom: 0;
+  left: calc(25%);
+  margin-bottom: 30px;
+}
+
+a.signal-button {
+  color: black;
+}
