@@ -58,11 +58,11 @@ class ChapterManager extends Manager {
     	return $deleteChapter;
     }
 
-    public function addChapter($title, $content) {
+    public function addChapter($title, $content, $image) {
 
 		$db = $this->dbConnect();
-        $chapter = $db->prepare('INSERT INTO chapters (title, content, creation_date)VALUES (?, ?, NOW())');
-        $addChapter = $chapter->execute(array($title, $content));
+        $chapter = $db->prepare('INSERT INTO chapters (title, content, image, creation_date) VALUES (?, ?, ?, NOW())');
+        $addChapter = $chapter->execute(array($title, $content, $image));
 
         return $addChapter;    	
     }

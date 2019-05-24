@@ -86,6 +86,10 @@ class Frontend extends Manager {
     	$commentManager = new \Alaska2\Model\CommentManager();
     	$countComm = $commentManager->countComments($id);
 
+        $data = [
+            'countComm' => $countComm,
+        ];
+
     	include 'view/frontend/chapterView.php';
     }
 
@@ -99,10 +103,9 @@ class Frontend extends Manager {
         
             $_SESSION['administrateur'] = true;
             $_SESSION['login'] = $adminInfo['login'];
-            /* $this->setFlash('Vous êtes à présent connecté', 'info'); */
+            
             header('Location: index.php?action=dashboard');
         } else {
-            /*$this->setFlash('Identifiants incorrects', 'warning'); */
             include 'view/frontend/connexionView.php';
         }
     }

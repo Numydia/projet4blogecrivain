@@ -28,8 +28,9 @@ class AdminManager extends Manager {
 
     	if (isset($_SESSION['administrateur']) && !empty($_SESSION['administrateur'])) {
             return $_SESSION['administrateur'] === true;
+        } else {
+             return false;
         }
-        return false;
     }    
 
 

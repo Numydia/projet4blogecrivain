@@ -7,6 +7,7 @@ require_once 'model/Manager.php';
 
 class CommentManager extends Manager {
 
+
 	public function getComments($chapterId) {
 
 		$db = $this->dbConnect();
@@ -103,6 +104,10 @@ class CommentManager extends Manager {
     	$comments->bind(':id', $id);
     	$comments->resultSet();
     	$results = $comments->rowCount();
+        $data = [
+            '$countComm' => $countComm,
+        ];
+
 
     	return $results;
     }

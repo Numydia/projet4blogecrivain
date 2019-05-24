@@ -16,16 +16,7 @@ require_once "model/AdminManager.php";
 
 class Backend extends Manager {
 
-	/* public function __construct() {
-
-		parent::__construct();
-		if (!$this->isAdmin()) {
-			$this->setFlash('Vous n\'êtes pas autorisé à accéder à cette page', $this::FLASH_ERROR);
-		}
-	} */
-
 	
-
 	/* =====================
 	=============== Chapters
 	======================*/
@@ -106,10 +97,10 @@ class Backend extends Manager {
     	require ('view/backend/newChapterView.php');
     }
 
-    function newChapter($title, $content) {
+    function newChapter($title, $content, $image) {
 
     	$chapterManager = new \Alaska2\Model\ChapterManager();
-    	$addChapter = $chapterManager->addChapter($title, $content);
+    	$addChapter = $chapterManager->addChapter($title, $content, $image);
 
     	header('Location: index.php?action=listChaptersBackend');
     }

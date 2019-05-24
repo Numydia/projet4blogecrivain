@@ -10,9 +10,13 @@
         </div>
       </div>
         <form action="index.php?action=addChapter" method="post">
+            <div class="form-group">
+                <label for="image"><strong>Image</strong></label>
+                <input type="text" class="form-control" name="image" id="image" placeholder="Nom de l'image">
+            </div>
         	<div class="form-group">
                 <label for="title"><strong>Titre</strong></label>
-                <input type="text" class="form-control" name="title" id="title" placeholder=" Titre du chapitre">
+                <input type="text" class="form-control" name="title" id="title" placeholder="Titre du chapitre">
 			</div>
 			<div class="form-group">
                 <label for="content"><strong>Contenu</strong></label> 

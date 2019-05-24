@@ -70,8 +70,8 @@ try {
                 $backend->adminNewChapter();
             }
           elseif ($_GET['action'] == 'addChapter') {
-            if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                $backend->newChapter($_POST['title'], $_POST['content']);
+            if (!empty($_POST['title']) && !empty($_POST['content']) && !empty($_POST['image'])) {
+                $backend->newChapter($_POST['title'], $_POST['content'], $_POST['image']);
             } else {
                 throw new Exception('Tous les champs ne sont pas remplis !');
             }
