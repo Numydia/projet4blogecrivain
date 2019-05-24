@@ -42,7 +42,7 @@
       <div class="row">
         <div class="col-md-5 col-sm-4 col-xs-12">
           <div class="section-title">
-            <h2 class="head-title lg-line">Qui-est Jean<br>Forteroche ?</h2>
+            <h2 class="head-title lg-line">Qui est Jean<br>Forteroche ?</h2>
             <hr class="bottom-left-line">
             <p class="sec-para text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis exercitationem modi reiciendis, dignissimos culpa sequi eveniet ab nesciunt commodi soluta, quia ipsum reprehenderit vero magnam, tempora aut atque neque perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente hic reprehenderit placeat, tenetur fugiat deleniti, doloribus. Perferendis non unde numquam maxime fugit suscipit nesciunt repudiandae. Maxime officia aspernatur beatae tenetur?</p>
           </div>

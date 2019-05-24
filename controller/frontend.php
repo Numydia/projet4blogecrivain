@@ -97,12 +97,12 @@ class Frontend extends Manager {
     function connexion($login, $password) {
     
         $adminManager = new \Alaska2\Model\AdminManager();
-        $adminInfo = $adminManager->checkLogin($login, $password);
+        $adminInfo = $adminManager->checkLogin($pseudo, $password);
         
         if ($adminInfo) {
         
             $_SESSION['administrateur'] = true;
-            $_SESSION['login'] = $adminInfo['login'];
+            $_SESSION['pseudo'] = $adminInfo['pseudo'];
             
             header('Location: index.php?action=dashboard');
         } else {
