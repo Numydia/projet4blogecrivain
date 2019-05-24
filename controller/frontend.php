@@ -94,7 +94,7 @@ class Frontend extends Manager {
     }
 
 
-    function connexion($login, $password) {
+    function connexion($pseudo, $password) {
     
         $adminManager = new \Alaska2\Model\AdminManager();
         $adminInfo = $adminManager->checkLogin($pseudo, $password);
