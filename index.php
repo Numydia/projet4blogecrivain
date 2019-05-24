@@ -15,10 +15,10 @@ try {
         } elseif ($_GET['action'] == 'contact') {
             $frontend->contact();
         } elseif ($_GET['action'] === 'login') {
-            if (!empty($_POST['login']) AND !empty($_POST['password'])) {
-                    $frontend->connexion($_POST['login'], ($_POST['password']));
+            if (!empty($_POST['pseudo']) AND !empty($_POST['password'])) {
+                    $frontend->connexion($_POST['pseudo'], ($_POST['password']));
             } else {
-                throw new Exception('Le login et/ou le mot de passe sont incorrects');
+                throw new Exception('Le pseudo et/ou le mot de passe sont incorrects');
             } 
         } elseif ($_GET['action'] === 'listChapters') {
             $frontend->listChapters();
