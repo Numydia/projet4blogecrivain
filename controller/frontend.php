@@ -94,22 +94,28 @@ class Frontend extends Manager {
     }
 
 
-    function connexion($pseudo, $password) {
+    function connexion($pseudo) {
     
         $adminManager = new \Alaska2\Model\AdminManager();
-        $adminInfo = $adminManager->checkLogin($pseudo, $password);
-        
-        if ($adminInfo) {
-        
-            $_SESSION['administrateur'] = true;
-            $_SESSION['pseudo'] = $adminInfo['pseudo'];
-            
-            header('Location: index.php?action=dashboard');
-        } else {
-            include 'view/frontend/connexionView.php';
-        }
-    }
 
+        $administrateur = $adminManager->checkLogin($pseudo);
+        $proper_pass = password_verify($_POST['password'], $administrateur['password']);
+
+
+        if ($administrateur == false) {
+            include 'view/frontend/connexionView.php';
+        } elseif ($administrateur['id_group'] == 1) {
+                
+                session_start();
+                $_SESSION['id'] = $administrateur['id'];
+                $_SESSION['pseudo'] = $administrateur['pseudo'];
+                $_SESSION['password'] = $administrateur['password'];
+                $_SESSION['id_group'] = $administrateur['id_group'];
+
+                header('Location: index.php?action=dashboard');
+            }
+        }   
+    
 
 
 } 

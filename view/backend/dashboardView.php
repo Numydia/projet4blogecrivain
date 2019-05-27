@@ -39,7 +39,7 @@
 	            <div class="signal-comments">
 	              <i class="fas fa-flag fa-2x"></i>
 	              <h3>Commentaires signalés</h3>
-	              <p>Supprimer tout ces méchants commentaires</p>
+	              <p>Supprimer tous ces méchants commentaires</p>
 	            </div>
         	</a>
           </div> 

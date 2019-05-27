@@ -31,10 +31,7 @@ class Manager {
     }
 
 
-    public function isAdmin() {
-
-    	return (new AdminManager())->isAdmin();
-    }
+    
 
 
 } 
