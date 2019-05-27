@@ -25,8 +25,8 @@ class ChapterManager extends Manager {
 	}
 
 
-	public function getChapter($chapter_id)
-    {
+	public function getChapter($chapter_id) {
+        
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT id, title, content, image, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM chapters WHERE id = ?');
         $req->execute(array($chapter_id));

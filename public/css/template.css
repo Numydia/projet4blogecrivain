@@ -53,15 +53,3 @@ a:hover {
 
   text-decoration: none;
 }
-
-
-/* =================================
-====================== Responsive */
-
-
-@media only screen and (max-width: 1000px) {
-	li.nav-item.logo {
-		margin: 0;
-
-	}
-}

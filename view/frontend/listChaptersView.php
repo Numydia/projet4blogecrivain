@@ -17,7 +17,7 @@
 				{
 				    ?>
 		<div class="background-listChapters-item row bg-white mb-4 pt-3 rounded-left">		    
-	        <div class="col-md-4 col-sm-6 listChapters-item">
+	        <div class="col-md-12 col-lg-4 col-sm-6 listChapters-item">
 	          <a class="listChapters-link" href="index.php?action=chapter&amp;id=<?= $data['id'] ?>">
 	            <div class="listChapters-hover">
 	              <div class="listChapters-hover-content">
@@ -27,7 +27,7 @@
 	            <img class="img-fluid" src="public/img/<?= $data['image'] ?>" alt="">
 	          </a>
 	        </div>
-	        <div class="listChapters-caption col-md-8 col-sm-6">
+	        <div class="listChapters-caption col-md-12 col-lg-8 col-sm-6">
 	            <h4><?= htmlspecialchars($data['title']) ?></h4>
 	            <p class="text-muted"><em>&nbsp;le <?= $data['creation_date_fr'] ?></em></p>
 	            <p class="content content-listChapters text-justify"> <?= nl2br(html_entity_decode(substr($data['content'], 0, 490))) ?></p>

@@ -23,7 +23,7 @@ if ((!isset($_SESSION['administrateur'])) || (empty($_SESSION['administrateur'])
 				{
 				    ?>
 		<div class="background-listChapters-item row bg-white mb-4 pt-3 rounded-left">		    
-	        <div class="col-md-4 col-sm-6 listChapters-item">
+	        <div class="col-md-12 col-lg-4 col-sm-6 listChapters-item">
 	          <a class="listChapters-link" href="index.php?action=chapterBackend&amp;id=<?= $data['id'] ?>">
 	            <div class="listChapters-hover">
 	              <div class="listChapters-hover-content">
@@ -33,7 +33,7 @@ if ((!isset($_SESSION['administrateur'])) || (empty($_SESSION['administrateur'])
 	            <img class="img-fluid" src="public/img/<?= $data['image'] ?>" alt="">
 	          </a>
 	        </div>
-	        <div class="col-md-8 col-sm-6">
+	        <div class="col-md-12 col-lg-8 col-sm-6">
 	        	<div class="row ml-auto">
 	        		<div class="chapterTitle">
 	        			<a class="" href="index.php?action=chapterBackend&amp;id=<?= $data['id'] ?>"><h4><?= htmlspecialchars($data['title']) ?></h4></a>

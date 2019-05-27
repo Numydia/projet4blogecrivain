@@ -28,13 +28,7 @@ class Manager {
 	    $db = new \PDO('mysql:host=localhost;dbname=alaska;charset=utf8', 'root', '');
 	        
 	    return $db;
-    }
-
-
-    public function isAdmin() {
-
-    	return (new AdminManager())->isAdmin();
-    }
+    }  
 
 
 } 

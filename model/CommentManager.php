@@ -48,8 +48,8 @@ class CommentManager extends Manager {
         return $updateComment;
     }
 
-    public function deleteComments($chapter_id)
-    {
+    public function deleteComments($chapter_id) {
+
         $db = $this->dbConnect();
         $comments = $db->prepare('DELETE FROM comments WHERE chapter_id = ?');
         $deleteComments = $comments->execute(array($chapter_id));
@@ -104,14 +104,9 @@ class CommentManager extends Manager {
     	$comments->bind(':id', $id);
     	$comments->resultSet();
     	$results = $comments->rowCount();
-        $data = [
-            '$countComm' => $countComm,
-        ];
-
+        
 
     	return $results;
     }
-
     
-
 }

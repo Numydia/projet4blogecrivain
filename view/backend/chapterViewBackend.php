@@ -16,12 +16,12 @@
 		================ Chapters -->
 		<section class="bg-white" id="chapter">
 	    	<div class="container">
-	      	  <div class="row">
+	      	    <div class="row">
 	        		<div class="section-header-chapter col-lg-12 text-center">
 	          			<h2 class="section-heading text-uppercase"><?= $chapter['title'] ?></h2>
 	        		</div>
-	        </div>
-				<div class="container col-xl-8 col-lg-10 col-md-12">
+	            </div>
+			    <div class="container col-xl-8 col-lg-10 col-md-12">
 						<p class="first-letter"> <?= $chapter['content'] ?></p>
 					<div class="listChapters-link-bottom">
 						<a class="chapterLink fas fa-long-arrow-alt-left" href="index.php?action=listChaptersBackend">&nbsp;Retour à la liste des chapitres</a>
@@ -29,7 +29,7 @@
 						<a class="chapterLink float-right fas fa-edit" title="Editer ce chapitre" href="index.php?action=adminUpdateChapter&amp;id=<?= $chapter['id'] ?>">Editer&nbsp;|&nbsp;</a>
 					</div>
 				</div>
-			  </div>
+			</div>
 		</section>
 
 		<!-- =======================

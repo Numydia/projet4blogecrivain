@@ -100,7 +100,8 @@ class Frontend extends Manager {
         $adminInfo = $adminManager->checkLogin($pseudo, $password);
         
         if ($adminInfo) {
-        
+
+            session_start();
             $_SESSION['administrateur'] = true;
             $_SESSION['pseudo'] = $adminInfo['pseudo'];
             
@@ -108,8 +109,8 @@ class Frontend extends Manager {
         } else {
             include 'view/frontend/connexionView.php';
         }
-    }
-
+    }  
+    
 
 
 } 

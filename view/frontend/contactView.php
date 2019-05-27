@@ -39,26 +39,20 @@
         </div>
 
         <div class="form">
-          <div id="sendmessage">Votre message a été envoyé.</div>
-          <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nom" data-rule="minlen:4" data-msg="Merci d'entrer au moins 4 caractères" />
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nom">
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Merci d'écrire une adresse email valide." />
-                <div class="validation"></div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Merci d'entrer au moins 8 caractères" />
-              <div class="validation"></div>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet">
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Ecrivez-nous quelque chose" placeholder="Message"></textarea>
-              <div class="validation"></div>
+              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             </div>
             <div class="text-center"><button type="submit">Envoyer</button></div>
           </form>
